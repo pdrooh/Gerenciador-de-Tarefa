@@ -1,0 +1,111 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+}
+
+#task-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: move;
+  transition: background-color 0.3s ease;
+}
+
+.task:hover {
+  background-color: #444;
+}
+
+.task.completed {
+  background-color: #55efc4;
+}
+
+.task-title {
+  flex-grow: 1;
+  font-size: 18px;
+  color: #fff;
+}
+
+#task-input {
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #444;
+  color: #fff;
+  outline: none;
+}
+
+#task-form button {
+  background-color: #55efc4;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 16px;
+  margin-left: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#task-form button:hover {
+  background-color: #00b894;
+}
+
+.task-actions button {
+  background-color: #55efc4;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 8px 12px;
+  margin-left: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.task-actions button:hover {
+  background-color: #00b894;
+}
+
+.task-actions .task-delete {
+  background-color: #ff6b6b;
+}
+
+.task-actions .task-delete:hover {
+  background-color: #ff4646;
+}
+
+
